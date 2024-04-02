@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<link rel="stylesheet" href="style2.css">
+	<script src="script2.js"></script>
+
+<body>
+	<h2 class="pagehead">Rank and Nullity of Linear Transformation</h2>
+	<div class="container">
+		<h4>Null Space of Linear Transformation</h4>
+		<img id="nslt" src="images/nullspace.png" alt="null space of Linear Transformation">
+		<h4>Range of Linear Transformation</h4>
+		<img id="rglt" src="images/range.png" alt="rangeT of Linear Transformation"><br>
+		
+		<h4>Example:</h4>
+		<p>T: R<sup>2</sup> &rarr; R<sup>2</sup></p>
+		<p>T(x, y) = (x, 2x); x, y &isin; R<sup>2</sup></p>
+		<p><span style="font-weight: bold;">1.</span> Null Space &equiv; N(T) = {(0, y) : y &isin; R}</p>
+		<p>&emsp;Nullity = dim N(T) = 1</p>
+		<img src="images/nullspaceex.png" alt="null space">
+
+
+		<p><span style="font-weight: bold;">2.</span> Range &equiv; R(T) = {(x, 2x) : x &isin; R}</p>
+		<p>&emsp;Rank T = dim R(T) = 1</p>
+		<img src="images/rangeex.png" alt="range space">
+		<ul><li><p class="ques"><strong>Question:</strong> What will be the rank of the matrix of this linear transformation w.r.t. the standard bases?</p></li></ul>
+		&emsp;&emsp;<label><strong>Answer: </strong></label><input id="same" type="submit" value="Same as rank T" onclick="sameresult()"> / <input id="different" type="submit" value="Different from rank T" onclick="differentresult()">
+		<p id="sameres"></p>
+		<p id="differentres"></p>
+		
+		
+		
+	</div>
+	<p style="float: center; align-content:right;">
+<a href="./" class="previous">&laquo; Previous</a></p>
+</body>
+
+</html>
