@@ -24,11 +24,15 @@ Rank (or nullity) of a matrix is same as the rank (or nullity) of the linear tra
 (ii). Consider the linear transformation T:R<sup>2</sup>→R<sup>2</sup> such that T(x, y)=(x, 0), where x, y&isin;R. Then rank of T is one because its range is {(α, 0): α&isin;R}.<br>
 (iii). Rank of the zero transformation is 0. <br>
 (iv). Let A= 
-$\begin{pmatrix}a & b \\\ c & d\end{pmatrix}$
+
+$$\begin{pmatrix}a & b \\\ c & d\end{pmatrix}$$
+
 be a matrix of order 2×2. Then rank of A is 0 because set of row vectors is {(0, 0)} which is linearly dependent. <br>
 (v). Let A=
+
 $$\begin{pmatrix}0 & 0 \\\ 0 & 0\end{pmatrix}$$
-, where a, b are non-zero real numbers, be a matrix of order 2×2. Then nullity of A is two because its null space is {(a, b): a, b&isin;R}.
+
+where a, b are non-zero real numbers, be a matrix of order 2×2. Then nullity of A is two because its null space is {(a, b): a, b&isin;R}.
 
 #### 9. Rank-Nullity theorem: 
 Let V and W be finite dimensional vector spaces over R and let T:V→W be a linear transformation. Then ρ(T)+η(T)=Dim V.
