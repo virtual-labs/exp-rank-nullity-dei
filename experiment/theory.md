@@ -1,5 +1,6 @@
 #### 1. Row and column vector:
 Let A be a matrix of order m×n. Then there are m rows and n columns. Each row gives a matrix of order 1×n and is known as a row vector. Similarly, each column gives a n×1 matrix and is known as a column vector. A row vector can be considered as an element of R<sup>n</sup> and column vector can be considered as an element of R<sup>m</sup>.
+![Row and column vector](images/exp6finalimaage.PNG "Row and column vector")
 #### 2. Null space	
 ##### 2.1. Null space of a linear transformation: 
 Let V and W be vector spaces over the field R and let T:V→W be a linear transformation. Then the null space of T is defined as the set of vectors x&isin;V such that T(x)=0 and is also known as kernel of T. It is denoted by N(T) or ker(T). Thus N(T)={ x&isin;V|T(x)=0}.
