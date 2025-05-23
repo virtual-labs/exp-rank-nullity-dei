@@ -1,8 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
 	<link rel="stylesheet" href="css/style2.css">
 	<script src="js/script2.js"></script>
-
+	<style>
+       
+        .container2 { display: flex; justify-content: center; align-items: center; position: relative; }
+        .canvas-container { text-align: center; margin: 20px; }
+        .arrow-container {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .arrow {
+            width: 60px;
+            height: 2px;
+            background-color: black;
+            position: relative;
+            margin: 0 10px;
+        }
+        .arrow::after {
+            content: "";
+            position: absolute;
+            right: -5px;
+            top: -5px;
+            border-left: 10px solid black;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+		.subbtn {
+			margin-left: 33px;
+			background-color: lightgray;
+			padding: 5px;
+			border-radius: 3px;
+		}
+		#result, #sameres, #result2, #result3, #differentres {
+			margin-left: 31px;
+		}
+		select{
+			font-size: 20px;
+		}
+		h4{
+			font-size: 28px;
+		}
+    </style>
+	</head>
 <body>
 	<h2 class="pagehead">Rank and Nullity of Linear Transformation</h2>
 	<div class="container">
@@ -14,13 +60,52 @@
 		<h4>Example:</h4>
 		<p>T: R<sup>2</sup> &rarr; R<sup>2</sup></p>
 		<p>T(x, y) = (x, 2x); x, y &isin; R<sup>2</sup></p>
-		<p><span style="font-weight: bold;">1.</span> Null Space &equiv; N(T) = {(0, y) : y &isin; R}</p>
-		<p>&emsp;Nullity = dim N(T) = 1</p>
-		<img src="images/nullspaceex.png" alt="null space">
+		<li><span style="font-weight: bold;"></span> Null Space &equiv; N(T) = {(0, y) : y <select name="cars" id="cars">
+			<option value="null"></option>
+			<option value="0">=0</option>
+			<option value="-1">=-1</option>
+			<option value="2">=2</option>
+			<option value="blR">&isin;R</option>
+		  </select>}</li>
+
+		  <button class="subbtn" id="subbtn" onclick="checkSelection()">Submit</button><br>
+		  <p id="result"></p>
+		  <img src="images/nullspaceex.png" alt="range space">
+		  <li><span style="font-weight: bold;"></span> Nullity T = <select name="nullity" id="nullity">
+			<option value="null"></option>
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="-1">-1</option>
+			<option value="2">2</option>
+			<option value="-2">-2</option>
+		  </select></li>
+		<button class="subbtn" id="subbtn" onclick="checkSelection2()">Submit</button><br>
+		<p id="result2"></p>
+		<!-- <p>&emsp;Nullity = dim N(T) = 1</p> -->
+		
+		
 
 
-		<p><span style="font-weight: bold;">2.</span> Range &equiv; R(T) = {(x, 2x) : x &isin; R}</p>
-		<p>&emsp;Rank T = dim R(T) = 1</p>
+		<li><span style="font-weight: bold;"></span> Range &equiv; R(T) = {(x, <select name="range" id="range">
+			<option value="null"></option>
+			<option value="x2">x+2</option>
+			<option value="xseq">x<sup>2</sup></option>
+			<option value="2x">2x</option>
+			<option value="x-2">x-2</option>
+			
+		  </select>) : x &isin; R}</li>
+		  <button class="subbtn" id="subbtn" onclick="selectRange()">Submit</button><br>
+		  <p id="result4"></p>
+		<li> Rank T = <select name="rank" id="rank">
+			<option value="null"></option>
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="-1">-1</option>
+			<option value="2">2</option>
+			<option value="-2">-2</option>
+		  </select></li>
+		  <button class="subbtn" id="subbtn" onclick="selectRank()">Submit</button><br>
+		<p id="result3"></p>
 		<img src="images/rangeex.png" alt="range space">
 		<ul><li><p class="ques"><strong>Question:</strong> What will be the rank of the matrix of this linear transformation w.r.t. the standard bases?</p></li></ul>
 		&emsp;&emsp;<label><strong>Answer: </strong></label><input id="same" type="submit" value="Same as rank T" onclick="sameresult()"> / <input id="different" type="submit" value="Different from rank T" onclick="differentresult()">
