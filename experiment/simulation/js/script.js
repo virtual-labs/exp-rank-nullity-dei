@@ -20,7 +20,7 @@ function smatrix(){
     if (!isValid) {
         alert("Please enter all the values.");
     } else {
-      document.getElementById("mat").innerHTML ="\\[ A =  \\begin{pmatrix} "+matrix_0_0+" & "+matrix_0_2+" &  "+ matrix_0_1 +" \\\\"  + matrix_1_0+"&" + matrix_1_2+"&"+   matrix_1_1 + "\\end{pmatrix} \\]";
+      document.getElementById("mat").innerHTML ="\\[ A &equiv; \\begin{pmatrix} a & b & c \\\\ d & e & f \\end{pmatrix} = \\begin{pmatrix} "+matrix_0_0+" & "+matrix_0_2+" &  "+ matrix_0_1 +" \\\\"  + matrix_1_0+"&" + matrix_1_2+"&"+   matrix_1_1 + "\\end{pmatrix} \\]";
       MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
     document.getElementById("calcbtn").style.display="block";
     }
