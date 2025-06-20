@@ -7,9 +7,7 @@
 <b> Experiment|     <b> Rank and Nullity of Linear Transformations and Matrices
 
 ### About the Experiment 
-
-Fill a brief description of this experiment here
-
+In this experiment, understanding of rank and nullity of linear transformations and matrices has been developed through interactive simulation and schematics.
 <b>Name of Developer | <b> Prof. Gunjan Agrawal
 :--|:--|
 <b> Institute | <b>  Dayalbagh Educational Institute
