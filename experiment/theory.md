@@ -28,12 +28,12 @@ Rank (or nullity) of a matrix is same as the rank (or nullity) of the linear tra
 
 $$\begin{pmatrix}a & b \\\ c & d\end{pmatrix}$$
 
-be a matrix of order 2×2. Then rank of A is 0 because set of row vectors is {(0, 0)} which is linearly dependent. <br>
+where a, b are non-zero real numbers, be a matrix of order 2×2. Then rank of A is 2. <br>
 (v). Let A=
 
 $$\begin{pmatrix}0 & 0 \\\ 0 & 0\end{pmatrix}$$
 
-where a, b are non-zero real numbers, be a matrix of order 2×2. Then nullity of A is two because its null space is {(a, b): a, b&isin;R}.
+be a matrix of order 2×2. Then nullity of A is 2.
 
 #### 4. Rank-Nullity theorem: 
 Let V and W be finite dimensional vector spaces over R and let T:V→W be a linear transformation. Then ρ(T)+η(T)=Dim V.

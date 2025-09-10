@@ -35,7 +35,7 @@ img{
 }
 #nslt{
     width: 33rem;
-    height:20rem;
+    height:14rem;
 
 }
 #note{
@@ -76,11 +76,11 @@ img{
   color: black;
 }
 .ques{
-    color: blue;
+    color: rgb(0, 0, 0);
 }
 input{
     font-size: 1rem;
 }
 label{
-    color: blue;
+    color: rgb(0, 0, 0);
 }

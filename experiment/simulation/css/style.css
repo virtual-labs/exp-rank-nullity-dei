@@ -26,8 +26,8 @@ body{
     padding: 1rem;
     border-radius: 1.2rem;
     background-color: whitesmoke;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 26%;
+    margin-right: 26%;
     /*background: transparent;
     background: linear-gradient(45deg, #0a0a0a, #3a4452);*/
     box-shadow: 0px 3px 15px rgba(133, 115, 119, 0.5);
@@ -43,6 +43,7 @@ body{
     font-size: 1.2rem;
     border: 1px solid teal;
     margin: 0.5rem 0.2rem 0.2rem 0.2rem;
+    margin-left: 3rem;
 }
 .subbtn:hover{
     background: linear-gradient(90deg, #81cdc6);

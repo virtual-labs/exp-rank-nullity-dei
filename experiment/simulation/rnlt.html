@@ -35,6 +35,7 @@
 		.subbtn {
 			margin-left: 33px;
 			background-color: lightgray;
+			font-size: 15px;
 			padding: 5px;
 			border-radius: 3px;
 		}
@@ -47,28 +48,67 @@
 		h4{
 			font-size: 28px;
 		}
+    #if1{
+      font-size: 2rem;
+    }
     </style>
 	</head>
 <body>
 	<h2 class="pagehead">Rank and Nullity of Linear Transformation</h2>
 	<div class="container">
-		<h4>Null Space of Linear Transformation</h4>
-		<img id="nslt" src="images/nullspace.png" alt="null space of Linear Transformation">
-		<h4>Range of Linear Transformation</h4>
-		<img id="rglt" src="images/range.png" alt="rangeT of Linear Transformation"><br>
-		
-		<h4>Example:</h4>
-		<p>T: R<sup>2</sup> &rarr; R<sup>2</sup></p>
-		<p>T(x, y) = (x, 2x); x, y &isin; R<sup>2</sup></p>
+		<h4>Exercise 1:</h4>
+		<img id="nslt" src="images/nullspace2.1.PNG" alt="null space of Linear Transformation">
+		<p>Shaded portion is 
+    <select id="answerEx1">
+      <option value="">--Select--</option>
+      <option value="R">Range R(T)</option>
+      <option value="N">Nullspace N(T)</option>
+     <option value="W">W</option>
+	  <option value="V">V</option>
+    </select>
+  </p>
+  <button class="subbtn" onclick="checkAnswer1()">Submit</button>
+  <p id="resultRT"></p>
+
+ 
+		<h4>Exercise 2:</h4>
+		<img id="rglt" src="images/range2.1.PNG" alt="rangeT of Linear Transformation"><br>
+		<p>Shaded portion in domain is  
+    <select id="answerEx2">
+      <option value="">--Select--</option>
+      <option value="RT">Range R(T)</option>
+      <option value="NS">Nullspace N(T)</option>
+      <option value="W">W</option>
+	  <option value="V">V</option>
+    </select>
+  </p>
+  <button class="subbtn" onclick="checkAnswer2()">Submit</button>
+  <p id="resultNS"></p>
+
+  <p>Shaded portion in co-domain is  
+    <select id="answerEx3">
+      <option value="">--Select--</option>
+      <option value="RT">Range R(T)</option>
+      <option value="NS">Nullspace N(T)</option>
+      <option value="W">W</option>
+	  <option value="V">V</option>
+    </select>
+  </p>
+  <button class="subbtn" onclick="checkAnswer3()">Submit</button>
+
+  <p id="rTresult"></p>
+		<h4>Exercise 3:</h4>
+		<p>Consider the linear transformation T: R<sup>2</sup> &rarr; R<sup>2</sup> defined by</p>
+		<p>&emsp;T(x, y) = (x, 2x); x, y &isin; R<sup>2</sup></p>
 		<li><span style="font-weight: bold;"></span> Null Space &equiv; N(T) = {(0, y) : y <select name="cars" id="cars">
 			<option value="null"></option>
 			<option value="0">=0</option>
 			<option value="-1">=-1</option>
 			<option value="2">=2</option>
 			<option value="blR">&isin;R</option>
-		  </select>}</li>
+		  </select>} <button class="subbtn" id="subbtn" onclick="checkSelection()">Submit</button></li>
 
-		  <button class="subbtn" id="subbtn" onclick="checkSelection()">Submit</button><br>
+		  <br>
 		  <p id="result"></p>
 		  <img src="images/nullspaceex.png" alt="range space">
 		  <li><span style="font-weight: bold;"></span> Nullity T = <select name="nullity" id="nullity">
@@ -78,8 +118,8 @@
 			<option value="-1">-1</option>
 			<option value="2">2</option>
 			<option value="-2">-2</option>
-		  </select></li>
-		<button class="subbtn" id="subbtn" onclick="checkSelection2()">Submit</button><br>
+		  </select><button class="subbtn" id="subbtn" onclick="checkSelection2()">Submit</button></li>
+		<br>
 		<p id="result2"></p>
 		<!-- <p>&emsp;Nullity = dim N(T) = 1</p> -->
 		
@@ -93,8 +133,8 @@
 			<option value="2x">2x</option>
 			<option value="x-2">x-2</option>
 			
-		  </select>) : x &isin; R}</li>
-		  <button class="subbtn" id="subbtn" onclick="selectRange()">Submit</button><br>
+		  </select>) : x &isin; R}<button class="subbtn" id="subbtn" onclick="selectRange()">Submit</button></li>
+		  <br>
 		  <p id="result4"></p>
 		<li> Rank T = <select name="rank" id="rank">
 			<option value="null"></option>
@@ -103,11 +143,11 @@
 			<option value="-1">-1</option>
 			<option value="2">2</option>
 			<option value="-2">-2</option>
-		  </select></li>
-		  <button class="subbtn" id="subbtn" onclick="selectRank()">Submit</button><br>
+		  </select> <button class="subbtn" id="subbtn" onclick="selectRank()">Submit</button></li>
+		  <br>
 		<p id="result3"></p>
 		<img src="images/rangeex.png" alt="range space">
-		<ul><li><p class="ques"><strong>Question:</strong> What will be the rank of the matrix of this linear transformation w.r.t. the standard bases?</p></li></ul>
+		<h4>Exercise 4:</h4><p class="ques">What will be the rank of the matrix of T w.r.t. the standard bases?</p>
 		&emsp;&emsp;<label><strong>Answer: </strong></label><input id="same" type="submit" value="Same as rank T" onclick="sameresult()"> / <input id="different" type="submit" value="Different from rank T" onclick="differentresult()">
 		<p id="sameres"></p>
 		<p id="differentres"></p>
@@ -117,6 +157,68 @@
 	</div>
 	<p style="float: center; align-content:right;">
 <a href="./" class="previous">&laquo; Previous</a></p>
+
+<script>
+function checkAnswer1() {
+  const ans = document.getElementById("answerEx1").value;
+  const result = document.getElementById("resultRT");
+  const img = document.getElementById("nslt");
+
+  if (ans === "N") {
+    result.textContent = "✅ Correct!";
+    result.style.color = "green";
+    img.src = "images/nullspace2.png";
+    img.style.height = "19rem";
+  } else if (ans === "") {
+    result.textContent = "⚠️ Please select an option.";
+    result.style.color = "orange";
+   
+  } else {
+    result.textContent = "❌ Incorrect! Shaded portion is Nullspace N(T)";
+    result.style.color = "red";
+    img.src = "images/nullspace2.png";
+    img.style.height = "19rem";
+  }
+}
+
+function checkAnswer2() {
+  const ans = document.getElementById("answerEx2").value;
+  const result = document.getElementById("resultNS");
+   const img = document.getElementById("rglt");
+
+  if (ans === "RT") {
+    result.textContent = "✅ Correct!";
+    result.style.color = "green";
+    img.src = "images/range2.png";
+  } else if (ans === "") {
+    result.textContent = "⚠️ Please select an option.";
+    result.style.color = "orange";
+  } else {
+    result.textContent = "❌ Incorrect! Shaded portion is Range R(T)";
+    result.style.color = "red";
+    img.src = "images/range2.png";
+  }
+}
+
+function checkAnswer3() {
+  const ans = document.getElementById("answerEx3").value;
+  const result = document.getElementById("rTresult");
+  const img = document.getElementById("rglt");
+
+  if (ans === "V") {
+    result.textContent = "✅ Correct!";
+    result.style.color = "green";
+    img.src = "images/range2.png";
+  } else if (ans === "") {
+    result.textContent = "⚠️ Please select an option.";
+    result.style.color = "orange";
+  } else {
+    result.textContent = "❌ Incorrect! Shaded portion is V";
+    result.style.color = "red";
+    img.src = "images/range2.png";
+  }
+}
+</script>
 </body>
 
 </html>
