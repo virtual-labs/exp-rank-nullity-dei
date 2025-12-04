@@ -52,3 +52,7 @@ c & d
 \end{pmatrix}
 $$
 
+this is test \(A = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \)
+
+This is a paragraph and here is the matrix $ \begin{pmatrix} a & b \\ c & d \end{pmatrix} $ continuing the same line.
+
