@@ -42,3 +42,13 @@ be a matrix of order 2×2. Then nullity of A is 2.
 Let V and W be finite dimensional vector spaces over R and let T:V→W be a linear transformation. Then ρ(T)+η(T)=Dim V.
 ##### 4.1. Example: 
 Let T:R<sup>2</sup>→R<sup>3</sup> be a map defined as T(x, y)=(x, y, x+y). We find the rank and nullity of T. One can easily verify that T is a linear transformation. Now, consider the standard basis of R<sup>2</sup>. Then T(1, 0)=(1, 0, 1) and T(0, 1)=(0, 1, 1). Thus the range(T) is a subspace of R<sup>3</sup> spanned by the vectors (1, 0, 1) and (0, 1, 1). These vectors are linearly independent which implies that rank(T)=2. By rank-nullity theorem, ρ(T) + η(T) =Dim(R<sup>2</sup>). This implies that η(T)=2-2=0. Thus nullity of T is zero. Alternatively, to find the nullity, notice that null space T= {(0, 0)}.
+
+this is just a test $ \begin{pmatrix} a & b \\ c & d \end{pmatrix} $
+
+$$
+\begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}
+$$
+
