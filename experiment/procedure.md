@@ -1,4 +1,4 @@
-1.	Enter the values a, b, c, d, e and f to choose a matrix of your choice and click on “Submit” button to display it.
+1.	Enter the values <i>a, b, c, d, e</i> and <i>f</i> to choose a matrix of your choice and click on “Submit” button to display it.
 2.	Click on “Rank” button to display the rank of chosen matrix.
 3.	Click on “See Explanation” link to understand the explanation.
 4.	Click on the “Next” button to go to the next page.
