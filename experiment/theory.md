@@ -42,17 +42,3 @@ be a matrix of order 2×2. Then nullity of <i>A</i> is 2.
 Let <i>V</i> and <i>W</i> be finite dimensional vector spaces over <i>R</i> and let <i>T</i>:<i>V→W</i> be a linear transformation. Then <i>ρ</i>(<i>T</i>)+<i>η</i>(<i>T</i>)=Dim <i>V</i>.
 ##### 4.1. Example: 
 Let <i>T</i>:<i>R</i><sup>2</sup>→<i>R</i><sup>3</sup> be a map defined as <i>T</i>(<i>x, y</i>)=(<i>x, y, x+y</i>). We find the rank and nullity of <i>T</i>. One can easily verify that <i>T</i> is a linear transformation. Now, consider the standard basis of <i>R</i><sup>2</sup>. Then <i>T</i>(1, 0)=(1, 0, 1) and <i>T</i>(0, 1)=(0, 1, 1). Thus the range(<i>T</i>) is a subspace of <i>R</i><sup>3</sup> spanned by the vectors (1, 0, 1) and (0, 1, 1). These vectors are linearly independent which implies that rank(<i>T</i>)=2. By rank-nullity theorem, <i>ρ</i>(<i>T</i>) + <i>η</i>(<i>T</i>) =Dim(<i>R</i><sup>2</sup>). This implies that <i>η</i>(<i>T</i>)=2-2=0. Thus nullity of <i>T</i> is zero. Alternatively, to find the nullity, notice that null space <i>T</i>= {(0, 0)}.
-
-this is just a test $ \begin{pmatrix} a & b \\ c & d \end{pmatrix} $
-
-$$
-\begin{pmatrix}
-a & b \\
-c & d
-\end{pmatrix}
-$$
-
-this is test \(A = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \)
-
-This is a paragraph and here is the matrix $ \begin{pmatrix} a & b \\ c & d \end{pmatrix} $ continuing the same line.
-
