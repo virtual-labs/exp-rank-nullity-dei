@@ -23,7 +23,7 @@ Let <i>V</i> and <i>W</i> be finite dimensional vector spaces over <i>R</i> and 
 Let <i>A</i> be matrix of order <i>m</i>×<i>n</i>. Then rank of a matrix <i>A</i> is the maximal number of linearly independent row or column vectors. It is denoted by <i>ρ</i>(<i>A</i>).
 ##### 3.2. Remark: 
 Let <i>A</i> be a matrix of order <i>m</i>×<i>n</i> and <i>T</i>:<i>V→W</i> be an associated linear transformation with respect to a given pair of bases. Then by definition it is immediate that rank of <i>A</i> is same as the rank of <i>T</i>. Hence change of basis does not affect rank. Same holds for nullity.
-##### 3.2.1 Examples:
+##### 3.2.1 Example:
 (i). Consider the linear transformation <i>T</i>:<i>R</i><sup>2</sup>→<i>R</i><sup>2</sup> such that <i>T</i>(<i>x, y</i>)=(<i>x, -y</i>), where <i>x, y</i>&isin;<i>R</i>. Then rank of <i>T</i> is 2 because its range is {(<i>α, β</i>): <i>α, β</i>&isin;<i>R</i>}. <br>
 (ii). Consider the linear transformation <i>T</i>:<i>R</i><sup>2</sup>→<i>R</i><sup>2</sup> such that <i>T</i>(<i>x, y</i>)=(<i>x</i>, 0), where <i>x, y</i>&isin;<i>R</i>. Then rank of <i>T</i> is one because its range is {(<i>α</i>, 0): <i>α</i>&isin;<i>R</i>}.<br>
 (iii). Rank of the zero transformation is 0. <br>
