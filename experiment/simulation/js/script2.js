@@ -1,6 +1,6 @@
 
 	function sameresult(){
-		document.getElementById('sameres').innerHTML="✅ Correct!<br>The rank of a linear transformation is same as the rank of the matrix associated with the linear transformation w.r.t. a pair of basis.";
+		document.getElementById('sameres').innerHTML="✅ Correct!<br>The rank of a linear transformation is same as the rank of the matrix associated with the linear transformation w.r.t. a pair of bases.";
 		document.getElementById('differentres').innerHTML="";
 		document.getElementById('same').style.backgroundColor="green";
 		document.getElementById('same').style.color="white";
@@ -11,7 +11,7 @@
 	}
 	function differentresult(){
 		document.getElementById('sameres').innerHTML="";
-		document.getElementById('differentres').innerHTML="❌ Incorrect!<br>The rank of a linear transformation is same as the rank of the matrix associated with the linear transformation w.r.t. a pair of basis.";
+		document.getElementById('differentres').innerHTML="❌ Incorrect!<br>The rank of a linear transformation is same as the rank of the matrix associated with the linear transformation w.r.t. a pair of bases.";
 		document.getElementById('different').style.backgroundColor="red";
 		document.getElementById('different').style.color="white";
 		document.getElementById('same').style.backgroundColor="grey";
