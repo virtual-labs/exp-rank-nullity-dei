@@ -90,3 +90,65 @@
 			result.style.color = "red";
 		}
 	}
+
+
+
+	function checkAnswer1() {
+  const ans = document.getElementById("answerEx1").value;
+  const result = document.getElementById("resultRT");
+  const img = document.getElementById("nslt");
+
+  if (ans === "N") {
+    result.textContent = "Answer: ✅ Correct!";
+    result.style.color = "green";
+    img.src = "images/nullspace2.PNG";
+    img.style.height = "19rem";
+  } else if (ans === "") {
+    result.textContent = "⚠️ Please select an option.";
+    result.style.color = "orange";
+   
+  } else {
+    result.innerHTML = "Answer: ❌ Incorrect! Correct Answer: Nullspace N(<i>T</i>)";
+    result.style.color = "red";
+    img.src = "images/nullspace2.PNG";
+    img.style.height = "19rem";
+  }
+}
+
+function checkAnswer2() {
+  const ans = document.getElementById("answerEx2").value;
+  const result = document.getElementById("resultNS");
+   const img = document.getElementById("rglt");
+
+  if (ans === "RT") {
+    result.textContent = "Answer: ✅ Correct!";
+    result.style.color = "green";
+    img.src = "images/range2.png";
+  } else if (ans === "") {
+    result.textContent = "⚠️ Please select an option.";
+    result.style.color = "orange";
+  } else {
+    result.innerHTML = "Answer: ❌ Incorrect! Correct Answer: Range R(<i>T</i>)";
+    result.style.color = "red";
+    img.src = "images/range2.png";
+  }
+}
+
+function checkAnswer3() {
+  const ans = document.getElementById("answerEx3").value;
+  const result = document.getElementById("rTresult");
+  const img = document.getElementById("rglt");
+
+  if (ans === "V") {
+    result.textContent = "Answer: ✅ Correct!";
+    result.style.color = "green";
+    img.src = "images/range2.png";
+  } else if (ans === "") {
+    result.textContent = "⚠️ Please select an option.";
+    result.style.color = "orange";
+  } else {
+    result.innerHTML = "Answer: ❌ Incorrect! Correct Answer: <i>V</i>";
+    result.style.color = "red";
+    img.src = "images/range2.png";
+  }
+}
