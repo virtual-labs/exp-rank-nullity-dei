@@ -1,6 +1,6 @@
 
 	function sameresult(){
-		document.getElementById('sameres').innerHTML="Correct!<br>The rank of a linear transformation is same as the rank of the matrix associated with the linear transformation w.r.t. a pair of basis.";
+		document.getElementById('sameres').innerHTML="✅ Correct!<br>The rank of a linear transformation is same as the rank of the matrix associated with the linear transformation w.r.t. a pair of bases.";
 		document.getElementById('differentres').innerHTML="";
 		document.getElementById('same').style.backgroundColor="green";
 		document.getElementById('same').style.color="white";
@@ -11,7 +11,7 @@
 	}
 	function differentresult(){
 		document.getElementById('sameres').innerHTML="";
-		document.getElementById('differentres').innerHTML="Incorrect!<br>The rank of a linear transformation is same as the rank of the matrix associated with the linear transformation w.r.t. a pair of basis.";
+		document.getElementById('differentres').innerHTML="❌ Incorrect!<br>The rank of a linear transformation is same as the rank of the matrix associated with the linear transformation w.r.t. a pair of bases.";
 		document.getElementById('different').style.backgroundColor="red";
 		document.getElementById('different').style.color="white";
 		document.getElementById('same').style.backgroundColor="grey";
@@ -28,10 +28,10 @@
 			alert("Please select the answer");
 		}
 		else if (selectedValue === "blR") {
-			document.getElementById("result").innerHTML = "Answer is Correct. <br> Null Space = {(x, y)&isin;R<sup>2</sup>: x=0} = y-axis";
+			document.getElementById("result").innerHTML = "Answer: ✅ Correct!";
 			result.style.color = "green";
 		} else {
-			document.getElementById("result").innerHTML = "Answer is Incorrect. <br> Correct answer is Null Space = {(x, y)&isin;R<sup>2</sup>: x=0} = y-axis";
+			document.getElementById("result").innerHTML = "Answer: ❌ Incorrect. Correct Answer:&isin;<i>R</i>";
 			result.style.color = "red";
 		}
 	}
@@ -46,10 +46,10 @@
 			alert("Please select the answer");
 		}
 		else if (selectedValue === "2" || selectedValue === "1" || selectedValue === "0") {
-			document.getElementById("result2").innerHTML = "Answer is Correct.";
+			document.getElementById("result2").innerHTML = "Answer: ✅ Correct.";
 			result.style.color = "green";
 		} else {
-			document.getElementById("result2").innerHTML = "Answer is Incorrect.";
+			document.getElementById("result2").innerHTML = "Answer: ❌ Incorrect.";
 			result.style.color = "red";
 		}
 	}
@@ -65,10 +65,10 @@
 			alert("Please select the answer");
 		}
 		else if (selectedValue === "1") {
-			document.getElementById("result3").innerHTML = "Answer is Correct.";
+			document.getElementById("result3").innerHTML = "Answer: ✅ Correct.";
 			result.style.color = "green";
 		} else {
-			document.getElementById("result3").innerHTML = "Answer is Incorrect.";
+			document.getElementById("result3").innerHTML = "Answer: ❌ Incorrect.";
 			result.style.color = "red";
 		}
 	}
@@ -83,10 +83,10 @@
 			alert("Please select the answer");
 		}
 		else if (selectedValue === "2x") {
-			document.getElementById("result4").innerHTML = "Answer is Correct.";
+			document.getElementById("result4").innerHTML = "Answer: ✅ Correct.";
 			result.style.color = "green";
 		} else {
-			document.getElementById("result4").innerHTML = "Answer is Incorrect.";
+			document.getElementById("result4").innerHTML = "Answer: ❌ Incorrect.";
 			result.style.color = "red";
 		}
 	}

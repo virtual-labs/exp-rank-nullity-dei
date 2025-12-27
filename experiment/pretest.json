@@ -2,75 +2,75 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Let T:R<sup>3</sup>→R<sup>2</sup> be the linear transformation defined by T(x, y, z) = (x, z), where x, y, z &isin; R. Let A = {(x, y, z) &isin; R<sup>3</sup> : T(x, y, z) = (0, 0)} and B = {T(x, y, z): (x, y, z) &isin; R<sup>3</sup>}.Then",
+      "question": "Let $T:R$<sup>3</sup>→$R$<sup>2</sup> be the linear transformation defined by $T(x, y, z) = (x, z)$, where $x, y, z$ &isin; $R$. Let $A$ = {($x, y, z$) &isin; $R$<sup>3</sup> : $T(x, y, z)$ = (0, 0)} and $B$ = {$T(x, y, z): (x, y, z)$ &isin; $R$<sup>3</sup>}.Then",
       "answers": {
-        "a": "A ⊆ R<sup>3</sup>, B ⊆ R<sup>2</sup>",
-        "b": "A, B ⊆ R<sup>3</sup>",
-        "c": "A ⊆ R<sup>2</sup>, B ⊆ R<sup>3</sup>",
-        "d": "A, B ⊆ R<sup>2</sup>"
+        "a": "$A ⊆ R$<sup>3</sup>, $B ⊆ R$<sup>2</sup>",
+        "b": "$A, B ⊆ R$<sup>3</sup>",
+        "c": "$A ⊆ R$<sup>2</sup>, $B ⊆ R$<sup>3</sup>",
+        "d": "$A, B ⊆ R$<sup>2</sup>"
       },
       "explanations": {
-        "a": "Correct by definition",
-        "b": "Incorrect by definition",
-        "c": "Incorrect by definition",
-        "d": "Incorrect by definition"
+        "a": "Correct. Follows by definition.",
+        "b": "Incorrect. Follows by definition.",
+        "c": "Incorrect. Follows by definition.",
+        "d": "Incorrect. Follows by definition."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "Let T:R<sup>2</sup>→R<sup>2</sup> be the linear transformation defined by T(x, y) = (x, 0), where x, y &isin; R. Then B={(x, y) &isin; R<sup>2</sup> : T(x, y)=(x, y)} equals",
+      "question": "Let $T:R$<sup>2</sup>→$R$<sup>2</sup> be the linear transformation defined by $T(x, y) = (x, 0)$, where $x, y$ &isin; $R$. Then $B=${$(x, y)$ &isin; $R$<sup>2</sup> : $T(x, y)=(x, y)$} equals",
       "answers": {
-        "a": "R<sup>2</sup>",
-        "b": "R×{0}",
-        "c": "R",
+        "a": "$R$<sup>2</sup>",
+        "b": "$R$×{0}",
+        "c": "$R$",
         "d": "{(0, 0)}"
       },
       "explanations": {
-        "a": "Incorrect by definition",
-        "b": "Correct by definition",
-        "c": "Incorrect by definition",
-        "d": "Incorrect by definition"
+        "a": "Incorrect. Follows by definition.",
+        "b": "Correct. Follows by definition.",
+        "c": "Incorrect. Follows by definition.",
+        "d": "Incorrect. Follows by definition."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "Let T:R<sup>2</sup>→R be the linear transformation defined by T(x, y) = x, where x, y &isin; R . Then A = {(x, y) &isin; R 2 : T(x, y) = 0} equals",
+      "question": "Let $T:R$<sup>2</sup>→$R$ be the linear transformation defined by $T(x, y) = x$, where $x, y$ &isin; $R$. Then $A$ = {$(x, y)$ &isin; $R$<sup>2</sup> : $T(x, y)$ = 0} equals",
       "answers": {
-        "a": "R<sup>2</sup>",
-        "b": "R×{0}",
-        "c": "R",
-        "d": "0×R"
+        "a": "$R$<sup>2</sup>",
+        "b": "$R${0}",
+        "c": "$R$",
+        "d": "0×R$"
       },
       "explanations": {
-        "a": "Incorrect by definition",
-        "b": "Incorrect by definition",
-        "c": "Incorrect by definition",
-        "d": "Correct by definition"
+        "a": "Incorrect. Follows by definition.",
+        "b": "Incorrect. Follows by definition.",
+        "c": "Incorrect. Follows by definition.",
+        "d": "Correct. Follows by definition."
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
     },
     {
-      "question": "Let T:R<sup>2</sup>→R<sup>2</sup> be the linear transformation defined by T(x, y) = (x, x+y), where x, y &isin; R. Let A = {(x, y) &isin; R<sup>2</sup> : T(x, y) = (0, 0)}and B = {(x, y) &isin; R<sup>2</sup> : T(x, y) = (1, 0)}. Then",
+      "question": "Let $T:R$<sup>2</sup>→$R$<sup>2</sup> be the linear transformation defined by $T(x, y) = (x, x+y)$, where $x, y$ &isin; $R$. Let $A$ = {$(x, y)$ &isin; $R$<sup>2</sup> : $T(x, y) = (0, 0)$}and $B$ = {$(x, y)$ &isin; $R$<sup>2</sup> : $T(x, y) = (1, 0)$}. Then",
       "answers": {
-        "a": "A is a subspace and B is not a subspace.",
-        "b": "A is not a subspace and B is a subspace.",
-        "c": "A is a subspace and B is a subspace.",
-        "d": "A is not a subspace and B is not a subspace."
+        "a": "$A$ is a subspace and $B$ is not a subspace.",
+        "b": "$A$ is not a subspace and $B$ is a subspace.",
+        "c": "$A$ is a subspace and $B$ is a subspace.",
+        "d": "$A$ is not a subspace and $B$ is not a subspace."
       },
       "explanations": {
-        "a": "Correct by definition",
-        "b": "Incorrect by definition",
-        "c": "Incorrect by definition",
-        "d": "Incorrect by definition"
+        "a": "Correct. Follows by definition.",
+        "b": "Incorrect. Follows by definition.",
+        "c": "Incorrect. Follows by definition.",
+        "d": "Incorrect. Follows by definition."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "Let T:R<sup>2</sup>→R<sup>4</sup> be the linear transformation defined by T(x, y) = (x, x+y, 0, 0), where x, y &isin; R. Then order of matrix representation of the linear transformation T is",
+      "question": "Let $T:R$<sup>2</sup>→$R$<sup>4</sup> be the linear transformation defined by $T(x, y) = (x, x+y, 0, 0)$, where $x, y$ &isin; $R$. Then order of matrix representation of the linear transformation $T$ is",
       "answers": {
         "a": "4×2",
         "b": "2×4",
@@ -78,10 +78,10 @@
         "d": "4×4"
       },
       "explanations": {
-        "a": "Correct by definition",
-        "b": "Incorrect by definition",
-        "c": "Incorrect by definition",
-        "d": "Incorrect by definition"
+        "a": "Correct. Follows by definition.",
+        "b": "Incorrect. Follows by definition.",
+        "c": "Incorrect. Follows by definition.",
+        "d": "Incorrect. Follows by definition."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
