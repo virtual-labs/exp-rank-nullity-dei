@@ -3,69 +3,7 @@
 	<head>
 	<link rel="stylesheet" href="css/style2.css">
 	<script src="js/script2.js"></script>
-	<style>
-       
-        .container2 { display: flex; justify-content: center; align-items: center; position: relative; }
-        .canvas-container { text-align: center; margin: 20px; }
-        .arrow-container {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 20px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-        }
-        .arrow {
-            width: 60px;
-            height: 2px;
-            background-color: black;
-            position: relative;
-            margin: 0 10px;
-        }
-        .arrow::after {
-            content: "";
-            position: absolute;
-            right: -5px;
-            top: -5px;
-            border-left: 10px solid black;
-            border-top: 5px solid transparent;
-            border-bottom: 5px solid transparent;
-        }
-		/* .subbtn {
-			margin-left: 33px;
-			background-color: lightgray;
-			font-size: 15px;
-			padding: 5px;
-			border-radius: 3px;
-		} */
-     .subbtn{
-        height:auto;
-        width:auto;
-        background-color:#81cdc6;
-        font-size: 1rem;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 600;
-        border: 1px solid teal;
-        margin: 0.5rem 0.2rem 0.2rem 0.5rem;
-        cursor: pointer;
-    }
-		#result, #sameres, #result2, #result3, #differentres {
-			margin-left: 31px;
-		}
-		select{
-			font-size: 16px;
-		}
-		h4{
-			font-size: 28px;
-		}
-    #if1{
-      font-size: 2rem;
-    }
-    li{
-      margin-left: 2rem;
-    }
-    </style>
+
 	</head>
 <body>
 	<h2 class="pagehead">Rank and Nullity of Linear Transformation</h2>
@@ -121,7 +59,7 @@
 			<option value="2">=2</option>
 			<option value="blR">&isin;𝑅</option>
 		  </select>} <button class="subbtn" id="subbtn" onclick="checkSelection()">Submit</button></li>
-		  <p id="result"></p>
+		  <p class="rescls" id="result"></p>
 		  <img src="images/nullspaceex.png" alt="range space">
 		  <li><span style="font-weight: bold;"></span> Nullity <i>T</i> = <select name="nullity" id="nullity">
 			<option value="null"></option>
@@ -132,7 +70,7 @@
 			<option value="-2">-2</option>
 		  </select><button class="subbtn" id="subbtn" onclick="checkSelection2()">Submit</button></li>
 		<br>
-		<p id="result2"></p>
+		<p class="rescls" id="result2"></p>
 		<!-- <p>&emsp;Nullity = dim N(T) = 1</p> -->
 		
 		
@@ -157,12 +95,12 @@
 			<option value="-2">-2</option>
 		  </select> <button class="subbtn" id="subbtn" onclick="selectRank()">Submit</button></li>
 		  <br>
-		<p id="result3"></p>
+		<p class="rescls" id="result3"></p>
 		<img src="images/rangeex.png" alt="range space">
 		<h4>Exercise 4:</h4><p class="ques">What will be the rank of the matrix of <i>T</i> w.r.t. the standard bases?</p>
 		&emsp;&emsp;<label><strong>Answer: </strong></label><input id="same" type="submit" value="Same as rank 𝑇" onclick="sameresult()"> / <input id="different" type="submit" value="Different from rank 𝑇" onclick="differentresult()">
-		<p id="sameres"></p>
-		<p id="differentres"></p>
+		<p class="rescls" id="sameres"></p>
+		<p class="rescls" id="differentres"></p>
 		
 		
 		
@@ -170,67 +108,6 @@
 	<p style="float: center; align-content:right;">
 <a href="./" class="previous">&laquo; Previous</a></p>
 
-<script>
-function checkAnswer1() {
-  const ans = document.getElementById("answerEx1").value;
-  const result = document.getElementById("resultRT");
-  const img = document.getElementById("nslt");
-
-  if (ans === "N") {
-    result.textContent = "Answer: ✅ Correct!";
-    result.style.color = "green";
-    img.src = "images/nullspace2.png";
-    img.style.height = "19rem";
-  } else if (ans === "") {
-    result.textContent = "⚠️ Please select an option.";
-    result.style.color = "orange";
-   
-  } else {
-    result.innerHTML = "Answer: ❌ Incorrect! Correct Answer: Nullspace N(<i>T</i>)";
-    result.style.color = "red";
-    img.src = "images/nullspace2.png";
-    img.style.height = "19rem";
-  }
-}
-
-function checkAnswer2() {
-  const ans = document.getElementById("answerEx2").value;
-  const result = document.getElementById("resultNS");
-   const img = document.getElementById("rglt");
-
-  if (ans === "RT") {
-    result.textContent = "Answer: ✅ Correct!";
-    result.style.color = "green";
-    img.src = "images/range2.png";
-  } else if (ans === "") {
-    result.textContent = "⚠️ Please select an option.";
-    result.style.color = "orange";
-  } else {
-    result.innerHTML = "Answer: ❌ Incorrect! Correct Answer: Range R(<i>T</i>)";
-    result.style.color = "red";
-    img.src = "images/range2.png";
-  }
-}
-
-function checkAnswer3() {
-  const ans = document.getElementById("answerEx3").value;
-  const result = document.getElementById("rTresult");
-  const img = document.getElementById("rglt");
-
-  if (ans === "V") {
-    result.textContent = "Answer: ✅ Correct!";
-    result.style.color = "green";
-    img.src = "images/range2.png";
-  } else if (ans === "") {
-    result.textContent = "⚠️ Please select an option.";
-    result.style.color = "orange";
-  } else {
-    result.innerHTML = "Answer: ❌ Incorrect! Correct Answer: <i>V</i>";
-    result.style.color = "red";
-    img.src = "images/range2.png";
-  }
-}
-</script>
 </body>
 
 </html>
