@@ -1,16 +1,27 @@
-<span style="font-family: 'Times New Roman'; font-size: 22px;">This experiment helps students in learning two important ideas in linear algebra: rank and nullity. Through this experiment, students will explore subspaces of vector spaces such as null space and range. Simple examples are given to make students understand what these mean and why these matter. Relation between rank and nullity has also been given to find one with the help of the other.</span>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">This experiment helps students in learning two important ideas in linear algebra: rank and nullity. Through this experiment, students will explore subspaces of vector spaces such as null space and range. Simple examples are given to make students understand what these mean and why these matter. Relation between rank and nullity has also been given to find one with the help of the other.</span><br>
+
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">1. Row and column vector:</span>**
-<span style="font-family: 'Times New Roman'; font-size: 22px;">Let <i>A</i> be a matrix of order <i>m</i>×<i>n</i>. Then there are <i>m</i> rows and <i>n</i> columns. Each row gives a matrix of order 1×<i>n</i> and is known as a row vector. Similarly, each column gives a <i>n</i>×1 matrix and is known as a column vector. A row vector can be considered as an element of <i>R</i><sup><i>n</i></sup> and column vector can be considered as an element of <i>R</i><sup><i>m</i></sup>. Conversely, an element of <i>R</i><sup><i>n</i></sup> can be considered as a column matrix (or column vector)/ row matrix (or row vector) of order <i>n</i>×1/1×<i>n</i>.</span>
+
+<span style="font-family: 'Times New Roman'; font-size: 22px;">Let <i>A</i> be a matrix of order <i>m</i>×<i>n</i>. Then there are <i>m</i> rows and <i>n</i> columns. Each row gives a matrix of order 1×<i>n</i> and is known as a row vector. Similarly, each column gives a <i>n</i>×1 matrix and is known as a column vector. A row vector can be considered as an element of <i>R</i><sup><i>n</i></sup> and column vector can be considered as an element of <i>R</i><sup><i>m</i></sup>. Conversely, an element of <i>R</i><sup><i>n</i></sup> can be considered as a column matrix (or column vector)/ row matrix (or row vector) of order <i>n</i>×1/1×<i>n</i>.</span><br>
 ![Row and column vector](images/exp6finalimaage.PNG "Row and column vector")
+
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">2. Null space </span>**	
+
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">2.1. Null space of a linear transformation: </span>**
+
 <span style="font-family: 'Times New Roman'; font-size: 22px;">Let <i>V</i> and <i>W</i> be vector spaces over the field <i>R</i> and let <i>T</i>:<i>V→W</i> be a linear transformation. Then the null space of <i>T</i> is defined as the set of vectors <i>x</i>&isin;<i>V</i> such that <i>T</i>(<i>x</i>)=0 and is also known as kernel of <i>T</i>. It is denoted by <i>N</i>(<i>T</i>) or ker(<i>T</i>). Thus <i>N</i>(<i>T</i>)={ <i>x</i>&isin;<i>V</i>|<i>T</i>(<i>x</i>)=0}. By definition, <i>N</i>(<i>T</i>) is a subspace of <i>V</i>.</span>
+
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">2.2. Null space of a matrix:</span>**
+
 <span style="font-family: 'Times New Roman'; font-size: 22px;">Let <i>A</i> be a matrix of order <i>m</i>×<i>n</i>. Then the null space of a matrix <i>A</i> is the set of all <i>x</i> in <i>R</i><sup><i>n</i></sup> (expressed as columns vectors) that satisfy the equation <i>Ax</i>=0, where 0 is the zero vector of <i>R</i><sup><i>n</i></sup>.</span>
+
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">2.3. Nullity:</span>** 
+
 <span style="font-family: 'Times New Roman'; font-size: 22px;">Let <i>V</i> and <i>W</i> be finite dimensional vector spaces over <i>R</i> and let <i>T</i>:<i>V→W</i> be a linear transformation. Then dimension of its null space (a subspace of <i>V</i>) is called the nullity of <i>T</i>. It is denoted by <i>η</i>(<i>T</i>).
 Let <i>A</i> be a matrix of order <i>m</i>×<i>n</i>. Then dimension of its null space is called the nullity of <i>A</i>. It is denoted by <i>η</i>(<i>A</i>).</span>
+
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">2.3.1. Examples:</span>**
+
 <span style="font-family: 'Times New Roman'; font-size: 22px;">(i). Consider the linear transformation <i>T</i>:<i>R</i><sup>2</sup>→<i>R</i><sup>2</sup> such that <i>T</i>(<i>x, y</i>)=(<i>x, -y</i>), where <i>x, y</i>&isin;<i>R</i>. Then nullity of <i>T</i> is zero because its null space is {(0, 0)}. <br>
 (ii). Consider the linear transformation <i>T</i>:<i>R</i><sup>2</sup>→<i>R</i><sup>2</sup> such that <i>T</i>(<i>x, y</i>)=(<i>x</i>, 0), where <i>x, y</i>&isin;<i>R</i>. Then nullity of <i>T</i> is one because its null space is {(0, <i>α</i>): <i>α</i>&isin;<i>R</i>}, where <i>α</i>&isin;<i>R</i>. <br>
 (iii). Nullity of the zero transformation is 0. <br>
