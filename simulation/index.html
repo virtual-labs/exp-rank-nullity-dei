@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <h2 class="pagehead">Rank of Matrix</h2>
+<div class="container">
+    <p>Enter the values of <i>a, b, c, d, e, f</i> to choose matrix <i>A</i></p>
+    <table>
+        <tr>
+          <td><label for="a"><i>a</i>: </label><input class="basisinput" type="number" id="matrix_0_0"></td>
+          <td><label for="a"><i>b</i>: </label><input class="basisinput" type="number" id="matrix_0_2"></td>
+          <td><label for="a"><i>c</i>: </label><input class="basisinput" type="number" id="matrix_0_1"></td>
+        </tr>
+        <tr>
+          <td><label for="a"><i>d</i>: </label><input class="basisinput" type="number" id="matrix_1_0"></td>
+          <td><label for="a"><i>e</i>: </label><input class="basisinput" type="number" id="matrix_1_2"></td>
+          <td><label for="a"><i>f</i>: </label><input class="basisinput" type="number" id="matrix_1_1"></td>
+        </tr>
+      </table>
+    
+      <button class="subbtn" id="subbtn" style="margin-left: 0%;" onclick="smatrix()">Submit</button>
+    
+      <p id="mat">\[ A \equiv \begin{pmatrix} a & b & c \\ d & e & f \end{pmatrix} \]</p>
+      <button class="subbtn" id="calcbtn" style="margin-left: 0%;" onclick="showexp()">Rank</button>
+      <p id="result"></p>
+      
+      <a href="javascript:calculateRank()" class="subbtn2" id="calcbtn2" style="display:none;">See Explanation</a>
+      <p id="colvec"></p>
+      <p id="rowvec"></p>
+      <p id="lcv"></p>
+      <p id="lrv"></p>
+      
+      
+      <p id="expln"></p>
+      </div>
+     
+</div>
+<p style="float: center; align-content:right;">
+<a href="./rnlt.html" class="next" >Next &raquo;</a></p>
+
+<script src="../assets/js/iframeResize.js"></script>
+        
+        </body>
+</html>
+
+
+

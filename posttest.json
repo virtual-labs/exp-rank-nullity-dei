@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Let $T:R$<sup>2</sup> → $R$<sup>2</sup> be the linear transformation defined by $T(x, y) = (-x, x)$, where $x, y$ &isin; $R$. Then the nullity of $T$ is?",
+      "answers": {
+        "a": "0",
+        "b": "1",
+        "c": "2",
+        "d": "4"
+      },
+      "explanations": {
+        "a": "Incorrect. Follows by definition.",
+        "b": "Correct. Follows by definition.",
+        "c": "Incorrect. Follows by definition.",
+        "d": "Incorrect. Follows by definition."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Let $T:R$<sup>2</sup> → $R$<sup>2</sup> be the linear transformation defined by $T(x, y) = (-x, -y)$, where $x, y$ &isin; $R$. Then the rank of $T$ is?",
+      "answers": {
+        "a": "1",
+        "b": "0",
+        "c": "2",
+        "d": "4"
+      },
+      "explanations": {
+        "a": "Incorrect. Follows by definition.",
+        "b": "Incorrect. Follows by definition.",
+        "c": "Correct. Follows by definition.",
+        "d": "Incorrect. Follows by definition."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Let $T:R$<sup>2</sup> → $R$<sup>3</sup> be the linear transformation defined by $T(x, y)= (x, x+y, 0)$, where $x, y, z$ &isin; $R$. Then the nullity of $T$ is?",
+      "answers": {
+        "a": "0",
+        "b": "1",
+        "c": "2",
+        "d": "3"
+      },
+      "explanations": {
+        "a": "Correct. Follows by definition.",
+        "b": "Incorrect. Follows by definition.",
+        "c": "Incorrect. Follows by definition.",
+        "d": "Incorrect. Follows by definition."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Let $T:R$<sup>2</sup> → $R$<sup>3</sup> be the linear transformation defined by $T(x, y) = (-x, -y, 0)$, where $x, y, z$ &isin; $R$. Then the null space of $T$ is?",
+      "answers": {
+        "a": "{(0, 0, $γ$): $γ$ &isin; $R$}",
+        "b": "{($α$, $β$, 0): $α$, $β$ &isin; $R$}",
+        "c": "{($α$, 0, $γ$): $α$, $γ$ &isin; $R$}",
+        "d": "{(0, 0, 0)}"
+      },
+      "explanations": {
+        "a": "Correct. Follows by definition.",
+        "b": "Incorrect. Follows by definition.",
+        "c": "Incorrect. Follows by definition.",
+        "d": "Incorrect. Follows by definition."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Let $T:R$<sup>2</sup> → $R$<sup>2</sup> be the linear transformation defined by $T(x, y)=(x, y)$, where $x, y$ &isin; $R$. Then the range of $T$ is?",
+      "answers": {
+        "a": "{($α$, $β$): $α$, $β$ &isin; $R$}",
+        "b": "{($α$, 0): $α$ &isin; $R$}",
+        "c": "{(0, $β$): $β$ &isin; $R$}",
+        "d": "{(0, 0)}"
+      },
+      "explanations": {
+        "a": "Correct. Follows by definition.",
+        "b": "Incorrect. Follows by definition.",
+        "c": "Incorrect. Follows by definition.",
+        "d": "Incorrect. Follows by definition."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}
