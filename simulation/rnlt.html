@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<link rel="stylesheet" href="css/style2.css">
+	<script src="js/script2.js"></script>
+
+	</head>
+<body>
+	<h2 class="pagehead">Hands on Practice</h2>
+	<div class="container">
+		<h4>Exercise 1:</h4>
+		<img id="nslt" src="images/nullspace2.1.PNG" alt="null space of Linear Transformation">
+		<p>Shaded portion is 
+    <select id="answerEx1">
+      <option value="">--Select--</option>
+      <option value="R">Range R(𝑇)</option>
+      <option value="N">Nullspace N(𝑇)</option>
+     <option value="W">𝑊</option>
+	  <option value="V">𝑉</option>
+    </select><button class="subbtn" onclick="checkAnswer1()">Submit</button>
+  </p>
+  
+  <p id="resultRT"></p>
+
+ 
+		<h4>Exercise 2:</h4>
+		<img id="rglt" src="images/range2.1.PNG" alt="rangeT of Linear Transformation"><br>
+		<p>Shaded portion in domain is  
+    <select id="answerEx2">
+      <option value="">--Select--</option>
+      <option value="RT">Range R(𝑇)</option>
+      <option value="NS">Nullspace N(𝑇)</option>
+      <option value="W">𝑊</option>
+	  <option value="V">𝑉</option>
+    </select>
+  </p>
+  <button class="subbtn" onclick="checkAnswer2()">Submit</button>
+  <p id="resultNS"></p>
+
+  <p>Shaded portion in co-domain is  
+    <select id="answerEx3">
+      <option value="">--Select--</option>
+      <option value="RT">Range R(𝑇)</option>
+      <option value="NS">Nullspace N(𝑇)</option>
+      <option value="W">𝑊</option>
+	  <option value="V">𝑉</option>
+    </select>
+  </p>
+  <button class="subbtn" onclick="checkAnswer3()">Submit</button>
+
+  <p id="rTresult"></p>
+		<h4>Exercise 3:</h4>
+		<p>Consider the linear transformation <i>T: R</i><sup>2</sup> &rarr; <i>R</i><sup>2</sup> defined by</p>
+		<p>&emsp;<i>T</i>(<i>x, y</i>) = (<i>x</i>, 2<i>x</i>); <i>x, y</i> &isin; <i>R</i><sup>2</sup></p>
+		<li><span style="font-weight: bold;"></span> Null Space &equiv; N(T) = {(0, <i>y</i>) : <i>y</i> <select name="cars" id="cars">
+			<option value="null"></option>
+			<option value="0">=0</option>
+			<option value="-1">=-1</option>
+			<option value="2">=2</option>
+			<option value="blR">&isin;𝑅</option>
+		  </select>} <button class="subbtn" id="subbtn" onclick="checkSelection()">Submit</button></li>
+		  <p class="rescls" id="result"></p>
+		  <img src="images/nullspaceex.png" alt="range space">
+		  <li><span style="font-weight: bold;"></span> Nullity <i>T</i> = <select name="nullity" id="nullity">
+			<option value="null"></option>
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="-1">-1</option>
+			<option value="2">2</option>
+			<option value="-2">-2</option>
+		  </select><button class="subbtn" id="subbtn" onclick="checkSelection2()">Submit</button></li>
+		<br>
+		<p class="rescls" id="result2"></p>
+		<!-- <p>&emsp;Nullity = dim N(T) = 1</p> -->
+		
+		
+
+
+		<li><span style="font-weight: bold;"></span> Range &equiv; R(<i>T</i>) = {(<i>x</i>, <select name="range" id="range">
+			<option value="null"></option>
+			<option value="x2">𝑥+2</option>
+			<option value="xseq">𝑥²</option>
+			<option value="2x">2𝑥</option>
+			<option value="x-2">𝑥-2</option>
+			
+		  </select>) : <i>x</i> &isin; <i>R</i>}<button class="subbtn" id="subbtn" onclick="selectRange()">Submit</button>
+		  <br>
+		  <p id="result4"></p></li>
+		<li> Rank <i>T</i> = <select name="rank" id="rank">
+			<option value="null"></option>
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="-1">-1</option>
+			<option value="2">2</option>
+			<option value="-2">-2</option>
+		  </select> <button class="subbtn" id="subbtn" onclick="selectRank()">Submit</button></li>
+		  <br>
+		<p class="rescls" id="result3"></p>
+		<img src="images/rangeex.png" alt="range space">
+		<h4>Exercise 4:</h4><p class="ques">What will be the rank of the matrix of <i>T</i> w.r.t. the standard bases?</p>
+		&emsp;&emsp;<label><strong>Answer: </strong></label><input id="same" type="submit" value="Same as rank 𝑇" onclick="sameresult()"> / <input id="different" type="submit" value="Different from rank 𝑇" onclick="differentresult()">
+		<p class="rescls" id="sameres"></p>
+		<p class="rescls" id="differentres"></p>
+		
+		
+		
+	</div>
+	<p style="float: center; align-content:right;">
+<a href="./" class="previous">&laquo; Previous</a></p>
+
+</body>
+
+</html>
