@@ -45,7 +45,7 @@ Let <i>A</i> be matrix of order <i>m</i>×<i>n</i>. Then rank of a matrix <i>A</
 (iv). Let A=</span> $ \begin{pmatrix}a & b \\\ c & d\end{pmatrix} $
 
 <span style="font-family: 'Times New Roman'; font-size: 22px;">where a, b are non-zero real numbers, be a matrix of order 2×2. Then rank of A is 2. <br>
-(v). Let A=</span> $ \begin{pmatrix}0 & 0 \\\ 0 & 0\end{pmatrix} $ be a matrix of order 2×2. Then nullity of <i>A</i> is 2.
+(v). Let A=</span> $ \begin{pmatrix}0 & 0 \\\ 0 & 0\end{pmatrix} $ <span style="font-family: 'Times New Roman'; font-size: 22px;">be a matrix of order 2×2. Then nullity of <i>A</i> is 2.</span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">4. Rank-Nullity theorem:</span>** 
 <span style="font-family: 'Times New Roman'; font-size: 22px;">Let <i>V</i> and <i>W</i> be finite dimensional vector spaces over <i>R</i> and let <i>T</i>:<i>V→W</i> be a linear transformation. Then <i>ρ</i>(<i>T</i>)+<i>η</i>(<i>T</i>)=Dim <i>V</i>.</span>
