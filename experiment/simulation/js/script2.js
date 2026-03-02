@@ -123,14 +123,14 @@ function checkAnswer2() {
   if (ans === "RT") {
     result.textContent = "Answer: ✅ Correct!";
     result.style.color = "green";
-    img.src = "images/range2.png";
+    img.src = "images/range2.PNG";
   } else if (ans === "") {
     result.textContent = "⚠️ Please select an option.";
     result.style.color = "orange";
   } else {
     result.innerHTML = "Answer: ❌ Incorrect! Correct Answer: Range R(<i>T</i>)";
     result.style.color = "red";
-    img.src = "images/range2.png";
+    img.src = "images/range2.PNG";
   }
 }
 
@@ -142,13 +142,14 @@ function checkAnswer3() {
   if (ans === "V") {
     result.textContent = "Answer: ✅ Correct!";
     result.style.color = "green";
-    img.src = "images/range2.png";
+    img.src = "images/range2.PNG";
   } else if (ans === "") {
     result.textContent = "⚠️ Please select an option.";
     result.style.color = "orange";
   } else {
     result.innerHTML = "Answer: ❌ Incorrect! Correct Answer: <i>V</i>";
     result.style.color = "red";
-    img.src = "images/range2.png";
+    img.src = "images/range2.PNG";
   }
+
 }
