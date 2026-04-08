@@ -24,9 +24,8 @@ Let <i>A</i> be a matrix of order <i>m</i>×<i>n</i>. Then dimension of its null
 
 <span style="font-family: 'Times New Roman'; font-size: 22px;">(i). Consider the linear transformation <i>T</i>:<i>R</i><sup>2</sup>→<i>R</i><sup>2</sup> such that <i>T</i>(<i>x, y</i>)=(<i>x, -y</i>), where <i>x, y</i>&isin;<i>R</i>. Then nullity of <i>T</i> is 0 because its null space is {(0, 0)}. <br>
 (ii). Consider the linear transformation <i>T</i>:<i>R</i><sup>2</sup>→<i>R</i><sup>2</sup> such that <i>T</i>(<i>x, y</i>)=(<i>x</i>, 0), where <i>x, y</i>&isin;<i>R</i>. Then nullity of <i>T</i> is 1 because its null space is {(0, <i>α</i>): <i>α</i>&isin;<i>R</i>}, where <i>α</i>&isin;<i>R</i>. <br>
-(iii). Nullity of the zero transformation is 0. <br>
-(iv). Let <i>A</i>= </span> $ \begin{pmatrix}a & b \\\ c & d\end{pmatrix} be a matrix of order 2×2. Then nullity of <i>A</i> is 0 because its null space is {(0, 0)} <br>
-(v). Let <i>A</i>=</span> $ \begin{pmatrix}a & b \\\ c & d\end{pmatrix} , where <i>a, b</i> are non-zero real numbers, be a matrix of order 2×2. Then nullity of <i>A</i> is 2 because its null space is {(<i>a, b</i>): <i>a, b</i>&isin;<i>R</i>}. </span>
+(iii). Let <i>A</i>= </span> $ \begin{pmatrix}a & b \\\ c & d\end{pmatrix} be a matrix of order 2×2. Then nullity of <i>A</i> is 0 because its null space is {(0, 0)} <br>
+(iv). Let <i>A</i>=</span> $ \begin{pmatrix}a & b \\\ c & d\end{pmatrix} , where <i>a, b</i> are non-zero real numbers, be a matrix of order 2×2. Then nullity of <i>A</i> is 2 because its null space is {(<i>a, b</i>): <i>a, b</i>&isin;<i>R</i>}. </span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">3. Range:</span>** 
 <span style="font-family: 'Times New Roman'; font-size: 22px;">Let <i>V</i> and <i>W</i> be vector spaces over a field <i>R</i>. Let <i>T</i>:<i>V→W</i> be a linear transformation. Then the range of <i>T</i> is defined as set of vectors <i>α</i>&isin;<i>W</i> such that <i>α</i>=<i>T</i>(<i>x</i>), for some <i>x</i>&isin;<i>V</i> which is denoted by <i>R</i>(<i>T</i>). Thus <i>R</i>(<i>T</i>)={<i>T</i>(<i>x</i>)&isin;<i>V</i> : <i>x</i>&isin;<i>V</i>}. By definition, <i>R</i>(<i>T</i>) is a subspace of <i>V</i>.</span>
