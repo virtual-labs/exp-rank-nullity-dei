@@ -24,7 +24,7 @@ Let <i>A</i> be a matrix of order <i>m</i>×<i>n</i>. Then dimension of its null
 
 <span style="font-family: 'Times New Roman'; font-size: 22px;">(i). Consider the linear transformation <i>T</i>:<i>R</i><sup>2</sup>→<i>R</i><sup>2</sup> such that <i>T</i>(<i>x, y</i>)=(<i>x, -y</i>), where <i>x, y</i>&isin;<i>R</i>. Then nullity of <i>T</i> is 0 because its the null space is {(0, 0)}. <br>
 (ii). Consider the linear transformation <i>T</i>:<i>R</i><sup>2</sup>→<i>R</i><sup>2</sup> such that <i>T</i>(<i>x, y</i>)=(<i>x</i>, 0), where <i>x, y</i>&isin;<i>R</i>. Then nullity of <i>T</i> is 1 because its the null space is {(0, <i>α</i>): <i>α</i>&isin;<i>R</i>}, where <i>α</i>&isin;<i>R</i>. <br>
-(iii). Let <i>A</i>= </span> $ \begin{pmatrix}a & b \\\ c & d\end{pmatrix}, where a, b are non-zero real numbers, be a matrix of order 2×2. Then nullity of <i>A</i> is 0 because its the null space is {(0, 0)}. <br>
+(iii). Let <i>A</i>= </span> $ \begin{pmatrix}a & b \\\ c & d\end{pmatrix}, where a, b, c, d are non-zero real numbers and ad-bc\neq0, be a matrix of order 2×2. Then nullity of <i>A</i> is 0 because its the null space is {(0, 0)}. <br>
 (iv). Let A=</span> $ \begin{pmatrix}0 & 0 \\\ 0 & 0\end{pmatrix} $ <span style="font-family: 'Times New Roman'; font-size: 22px;">be a matrix of order 2×2. Then nullity of <i>A</i> is 2.</span> Then nullity of <i>A</i> is 2 because its the null space is {(<i>a, b</i>): <i>a, b</i>&isin;<i>R</i>}. </span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">3. Range:</span>** 
@@ -43,7 +43,7 @@ Let <i>A</i> be matrix of order <i>m</i>×<i>n</i>. Then the rank of a matrix <i
 (iii). Rank of the zero transformation is 0. <br>
 (iv). Let A=</span> $ \begin{pmatrix}a & b \\\ c & d\end{pmatrix} $
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">, where a, b are non-zero real numbers, be a matrix of order 2×2. Then the rank of A is 2. <br>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">, where a, b, c, d are non-zero real numbers and ad-bc\neq0, be a matrix of order 2×2. Then the rank of A is 2. <br>
 (v). Let A=</span> $ \begin{pmatrix}0 & 0 \\\ 0 & 0\end{pmatrix} $ <span style="font-family: 'Times New Roman'; font-size: 22px;">be a matrix of order 2×2. Then the rank of <i>A</i> is 0.</span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">4. Rank-Nullity theorem:</span>** 
