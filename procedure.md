@@ -1,0 +1,9 @@
+<span style="font-family: 'Times New Roman'; font-size: 22px;">1.	Enter the values <i>a, b, c, d, e</i> and <i>f</i> to choose a matrix of your choice and click on “Submit” button to display it.<br>
+2.	Click on “Rank” button to display the rank of chosen matrix.<br>
+3.	Click on “See Explanation” link to understand the explanation.<br>
+4.	Click on the “Next” button to go to the next page.<br>
+5.	This page is devoted to the learning of range and null space of linear transformations through exercises. Here user is required to answer the given question by selecting the value from the dropdown.<br>
+6.	In Exercise 1, select the correct answer from the dropdown for the given question and click on “Submit” button to check the answer.<br>
+7.	In Exercise 2, select the correct answer from the dropdown for each given question and click on “Submit” button to check the answer.<br>
+8.	In Exercise 3, select the correct answer from the dropdown for each given question and click on “Submit” button to check the answer.<br>
+9.	In Exercise 4, select the correct answer for the given question. This will check the answer and user will get the required explanation.</span>
