@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	<link rel="stylesheet" href="css/style2.css">
-	<script src="js/script2.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style2.css">
+		<script src="js/script2.js"></script>
 
 	</head>
 <body>
@@ -52,15 +53,15 @@
 		<h4>Exercise 3:</h4>
 		<p>Consider the linear transformation <i>T: R</i><sup>2</sup> &rarr; <i>R</i><sup>2</sup> defined by</p>
 		<p>&emsp;<i>T</i>(<i>x, y</i>) = (<i>x</i>, 2<i>x</i>); <i>x, y</i> &isin; <i>R</i><sup>2</sup></p>
-		<li><span style="font-weight: bold;"></span> Null Space &equiv; N(T) = {(0, <i>y</i>) : <i>y</i> <select name="cars" id="cars">
+		<li><span style="font-weight: bold;"></span> Null Space &equiv; N(T) = {(0, <i>y</i>) : <select name="cars" id="exp3Q1">
 			<option value="null"></option>
-			<option value="0">=0</option>
-			<option value="-1">=-1</option>
-			<option value="2">=2</option>
-			<option value="blR">&isin;𝑅</option>
+			<option value="0">𝑦=0</option>
+			<option value="-1">𝑦=-1</option>
+			<option value="2">𝑦=2</option>
+			<option value="blR">𝑦&isin;𝑅</option>
 		  </select>} <button class="subbtn" id="subbtn" onclick="checkSelection()">Submit</button></li>
 		  <p class="rescls" id="result"></p>
-		  <img src="images/nullspaceex.png" alt="range space">
+		  <img id="exp3Q1img" src="images/emptyImg.png" alt="range space">
 		  <li><span style="font-weight: bold;"></span> Nullity <i>T</i> = <select name="nullity" id="nullity">
 			<option value="null"></option>
 			<option value="0">0</option>
@@ -69,7 +70,6 @@
 			<option value="2">2</option>
 			<option value="-2">-2</option>
 		  </select><button class="subbtn" id="subbtn" onclick="checkSelection2()">Submit</button></li>
-		<br>
 		<p class="rescls" id="result2"></p>
 		<!-- <p>&emsp;Nullity = dim N(T) = 1</p> -->
 		
@@ -83,9 +83,9 @@
 			<option value="2x">2𝑥</option>
 			<option value="x-2">𝑥-2</option>
 			
-		  </select>) : <i>x</i> &isin; <i>R</i>}<button class="subbtn" id="subbtn" onclick="selectRange()">Submit</button>
-		  <br>
-		  <p id="result4"></p></li>
+		  </select>) : <i>x</i> &isin; <i>R</i>}<button class="subbtn" id="subbtn" onclick="selectRange()">Submit</button></li>
+		  <p class="rescls" id="result4"></p>
+		  <img id="exp3Q3img" src="images/emptyImg.png" alt="range space">
 		<li> Rank <i>T</i> = <select name="rank" id="rank">
 			<option value="null"></option>
 			<option value="0">0</option>
@@ -94,10 +94,9 @@
 			<option value="2">2</option>
 			<option value="-2">-2</option>
 		  </select> <button class="subbtn" id="subbtn" onclick="selectRank()">Submit</button></li>
-		  <br>
+		
 		<p class="rescls" id="result3"></p>
-		<img src="images/rangeex.png" alt="range space">
-		<h4>Exercise 4:</h4><p class="ques">What will be the rank of the matrix of <i>T</i> w.r.t. the standard bases?</p>
+		<h4>Exercise 4:</h4><p class="ques">What will be the rank of the matrix of <i>T</i> given in Exercise 3, w.r.t. the standard basis?</p>
 		&emsp;&emsp;<label><strong>Answer: </strong></label><input id="same" type="submit" value="Same as rank 𝑇" onclick="sameresult()"> / <input id="different" type="submit" value="Different from rank 𝑇" onclick="differentresult()">
 		<p class="rescls" id="sameres"></p>
 		<p class="rescls" id="differentres"></p>

@@ -86,3 +86,17 @@ body{
   background-color: #ada;
   color: black;
 }
+
+
+@media (max-width: 768px) {
+    .container{
+    /*border: 1px solid #717377;*/
+    padding: 1rem;
+    border-radius: 1.2rem;
+    background-color: whitesmoke;
+    margin:5px;
+    /*background: transparent;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);*/
+    box-shadow: 0px 3px 15px rgba(133, 115, 119, 0.5);
+}
+}

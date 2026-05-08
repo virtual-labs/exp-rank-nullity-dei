@@ -19,9 +19,10 @@
 		document.getElementById('sameres').style.border="none";
 	}
 	function checkSelection() {
-		let selectBox = document.getElementById("cars");
+		let selectBox = document.getElementById("exp3Q1");
 		let selectedValue = selectBox.value;
 		let result = document.getElementById("result");
+		const img = document.getElementById("exp3Q1img");
 		
 		if(selectedValue === "null")
 		{
@@ -30,9 +31,11 @@
 		else if (selectedValue === "blR") {
 			document.getElementById("result").innerHTML = "Answer: ✅ Correct!";
 			result.style.color = "green";
+			img.src = "images/nullspaceex.PNG";
 		} else {
-			document.getElementById("result").innerHTML = "Answer: ❌ Incorrect. Correct Answer:&isin;<i>R</i>";
+			document.getElementById("result").innerHTML = "Answer: ❌ Incorrect. Correct Answer: <i>y</i>&isin;<i>R</i>";
 			result.style.color = "red";
+			img.src = "images/nullspaceex.PNG";
 		}
 	}
 
@@ -45,11 +48,11 @@
 		{
 			alert("Please select the answer");
 		}
-		else if (selectedValue === "2" || selectedValue === "1" || selectedValue === "0") {
+		else if (selectedValue === "1") {
 			document.getElementById("result2").innerHTML = "Answer: ✅ Correct.";
 			result.style.color = "green";
 		} else {
-			document.getElementById("result2").innerHTML = "Answer: ❌ Incorrect.";
+			document.getElementById("result2").innerHTML = "Answer: ❌ Incorrect. Correct Answer: 1";
 			result.style.color = "red";
 		}
 	}
@@ -68,7 +71,7 @@
 			document.getElementById("result3").innerHTML = "Answer: ✅ Correct.";
 			result.style.color = "green";
 		} else {
-			document.getElementById("result3").innerHTML = "Answer: ❌ Incorrect.";
+			document.getElementById("result3").innerHTML = "Answer: ❌ Incorrect. Correct Answer: 1";
 			result.style.color = "red";
 		}
 	}
@@ -77,6 +80,7 @@
 		let selectBox = document.getElementById("range");
 		let selectedValue = selectBox.value;
 		let result = document.getElementById("result4");
+		const img = document.getElementById("exp3Q3img");
 
 		if(selectedValue === "null")
 		{
@@ -85,9 +89,11 @@
 		else if (selectedValue === "2x") {
 			document.getElementById("result4").innerHTML = "Answer: ✅ Correct.";
 			result.style.color = "green";
+			img.src = "images/rangeex.PNG";
 		} else {
-			document.getElementById("result4").innerHTML = "Answer: ❌ Incorrect.";
+			document.getElementById("result4").innerHTML = "Answer: ❌ Incorrect. Correct Answer: 2𝑥";
 			result.style.color = "red";
+			img.src = "images/rangeex.PNG";
 		}
 	}
 
@@ -111,7 +117,7 @@
     result.innerHTML = "Answer: ❌ Incorrect! Correct Answer: Nullspace N(<i>T</i>)";
     result.style.color = "red";
     img.src = "images/nullspace2.PNG";
-    img.style.height = "19rem";
+    img.style.height = "auto";
   }
 }
 
@@ -119,25 +125,6 @@ function checkAnswer2() {
   const ans = document.getElementById("answerEx2").value;
   const result = document.getElementById("resultNS");
    const img = document.getElementById("rglt");
-
-  if (ans === "RT") {
-    result.textContent = "Answer: ✅ Correct!";
-    result.style.color = "green";
-    img.src = "images/range2.PNG";
-  } else if (ans === "") {
-    result.textContent = "⚠️ Please select an option.";
-    result.style.color = "orange";
-  } else {
-    result.innerHTML = "Answer: ❌ Incorrect! Correct Answer: Range R(<i>T</i>)";
-    result.style.color = "red";
-    img.src = "images/range2.PNG";
-  }
-}
-
-function checkAnswer3() {
-  const ans = document.getElementById("answerEx3").value;
-  const result = document.getElementById("rTresult");
-  const img = document.getElementById("rglt");
 
   if (ans === "V") {
     result.textContent = "Answer: ✅ Correct!";
@@ -148,6 +135,25 @@ function checkAnswer3() {
     result.style.color = "orange";
   } else {
     result.innerHTML = "Answer: ❌ Incorrect! Correct Answer: <i>V</i>";
+    result.style.color = "red";
+    img.src = "images/range2.PNG";
+  }
+}
+
+function checkAnswer3() {
+  const ans = document.getElementById("answerEx3").value;
+  const result = document.getElementById("rTresult");
+  const img = document.getElementById("rglt");
+
+  if (ans === "RT") {
+    result.textContent = "Answer: ✅ Correct!";
+    result.style.color = "green";
+    img.src = "images/range2.PNG";
+  } else if (ans === "") {
+    result.textContent = "⚠️ Please select an option.";
+    result.style.color = "orange";
+  } else {
+    result.innerHTML = "Answer: ❌ Incorrect! Correct Answer: Range R(<i>T</i>)";
     result.style.color = "red";
     img.src = "images/range2.PNG";
   }
