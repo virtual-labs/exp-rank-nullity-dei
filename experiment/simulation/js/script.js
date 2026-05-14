@@ -56,12 +56,12 @@ function calculateRank() {
         matrix_1_1 = parseInt(document.getElementById("matrix_1_1").value);
 
   // Display the result
-  document.getElementById('result').innerHTML = `Rank of the matrix is: ${rank}`;
+  document.getElementById('result').innerHTML = `Rank of the matrix <i>A</i>: ${rank}`;
   document.getElementById('lrv').innerHTML = `Maximal number of linearly independent row vectors: ${rank}`;
   document.getElementById('lcv').innerHTML = `Maximal number of linearly independent column vectors: ${rank}`;
   
-  document.getElementById("colvec").innerHTML = "Column Vectors:  (" + matrix_0_0 + ","+ matrix_1_0 +")" + ", "+ "("+matrix_0_2 + ","+ matrix_1_2 +")"+ ", "+ "("+matrix_0_1 + ","+ matrix_1_1 +")";
-  document.getElementById("rowvec").innerHTML = "Row Vectors:  (" + matrix_0_0 + ","+ matrix_0_2 + "," + matrix_0_1 +")" + ", "+ "(" + matrix_1_0 + ","+ matrix_1_2 + "," + matrix_1_1 +")";
+  document.getElementById("colvec").innerHTML = "Column Vectors:  (" + matrix_0_0 + ", "+ matrix_1_0 +")" + ", "+ "("+matrix_0_2 + ", "+ matrix_1_2 +")"+ ", "+ "("+matrix_0_1 + ", "+ matrix_1_1 +")";
+  document.getElementById("rowvec").innerHTML = "Row Vectors:  (" + matrix_0_0 + ", "+ matrix_0_2 + ", " + matrix_0_1 +")" + ", "+ "(" + matrix_1_0 + ", "+ matrix_1_2 + ", " + matrix_1_1 +")";
       
 }
 
@@ -94,7 +94,7 @@ function showexp() {
 
   // Display the result
   document.getElementById("calcbtn2").style.display="block";
-  document.getElementById('result').innerHTML = `Rank of the matrix is: ${rank}`;
+  document.getElementById('result').innerHTML = `Rank of the matrix <i>A</i>: ${rank}`;
   
 }
 
