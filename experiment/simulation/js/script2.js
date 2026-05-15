@@ -31,11 +31,11 @@
 		else if (selectedValue === "blR") {
 			document.getElementById("result").innerHTML = "Answer: ✅ Correct!";
 			result.style.color = "green";
-			img.src = "images/nullspaceex.PNG";
+			img.src = "images/nullspaceex.png";
 		} else {
 			document.getElementById("result").innerHTML = "Answer: ❌ Incorrect. Correct Answer: <i>y</i>&isin;<i>R</i>";
 			result.style.color = "red";
-			img.src = "images/nullspaceex.PNG";
+			img.src = "images/nullspaceex.png";
 		}
 	}
 
@@ -89,11 +89,11 @@
 		else if (selectedValue === "2x") {
 			document.getElementById("result4").innerHTML = "Answer: ✅ Correct.";
 			result.style.color = "green";
-			img.src = "images/rangeex.PNG";
+			img.src = "images/rangeex.png";
 		} else {
 			document.getElementById("result4").innerHTML = "Answer: ❌ Incorrect. Correct Answer: 2𝑥";
 			result.style.color = "red";
-			img.src = "images/rangeex.PNG";
+			img.src = "images/rangeex.png";
 		}
 	}
 
